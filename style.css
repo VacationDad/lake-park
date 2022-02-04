@@ -9,12 +9,12 @@ h2 {
   color: #1c5687;
   font-family: "Merriweather";
   font-style: bold;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 h5 {
   color: #333333;
   font-family: "Sintony";
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 #site_wrap {
@@ -47,7 +47,7 @@ h5 {
   grid-area: header;
   font-family: "Sintony";
   font-style: bold;
-  font-size: 16px;
+  font-size: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,14 +55,16 @@ h5 {
   width: 100%;
   z-index: 10;
 }
-.nav {
+.nav{
   display: flex;
   position: relative;
   color: white;
   padding: 0px 0px 0px 70px;
-  font-size: 18px;
+  font-size: 1.125em;
   align-items: center;
   width: 100%;
+  height: 60px;
+  flex-shrink: none;
 }
 /* nav bar section */
 .navbar {
@@ -77,6 +79,7 @@ h5 {
   text-decoration: none;
   text-decoration-color: none;
   padding: 18px 21px 18px 20px;
+  color: #ffff;
 }
 .navbar a.navlink:visited {
   text-decoration: none;
@@ -185,18 +188,22 @@ h5 {
 }
 .featured_header_container {
   padding: 20px 19px 15px 91px;
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   align-items: center;
+  position: relative;
+  max-height: 135px;
 }
 .title-text {
   padding-left: 19px;
+  float: left;
 }
 .global_icons {
-  display: inline-flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
+    display: inline-flex;
+    position: relative;
+    float: right;
+    justify-content: flex-end;
+    align-items: center;
 }
 .global_icons_wrapper {
   padding: 1px;
@@ -225,6 +232,7 @@ h5 {
   width: 100%;
   z-index: 2;
   background-color: yellow;
+  opacity: 30%;
 }
 .overlay-column1 {
   float: left;
