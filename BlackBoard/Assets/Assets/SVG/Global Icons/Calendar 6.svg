@@ -1,0 +1,12 @@
+<svg id="Calendar_6" data-name="Calendar 6" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <path id="Path_970" data-name="Path 970" d="M36.65,3.75h-5.4V1.25a1.25,1.25,0,0,0-2.5,0v2.5h-7.5V1.25a1.25,1.25,0,1,0-2.5,0v2.5h-7.5V1.25a1.25,1.25,0,1,0-2.5,0v2.5H3.35A3.35,3.35,0,0,0,0,7.1V36.65A3.35,3.35,0,0,0,3.35,40h33.3A3.35,3.35,0,0,0,40,36.65V7.1a3.35,3.35,0,0,0-3.35-3.35Zm.85,32.9a.85.85,0,0,1-.85.85H3.35a.85.85,0,0,1-.85-.85V7.1a.85.85,0,0,1,.85-.85h5.4v2.5a1.25,1.25,0,1,0,2.5,0V6.25h7.5v2.5a1.25,1.25,0,1,0,2.5,0V6.25h7.5v2.5a1.25,1.25,0,0,0,2.5,0V6.25h5.4a.85.85,0,0,1,.85.85Z" fill="#113a55"/>
+  <rect id="Rectangle_416" data-name="Rectangle 416" width="5" height="3.75" transform="translate(8.75 15)" fill="#113a55"/>
+  <rect id="Rectangle_417" data-name="Rectangle 417" width="5" height="3.75" transform="translate(8.75 21.25)" fill="#113a55"/>
+  <rect id="Rectangle_418" data-name="Rectangle 418" width="5" height="3.75" transform="translate(8.75 27.5)" fill="#113a55"/>
+  <rect id="Rectangle_419" data-name="Rectangle 419" width="5" height="3.75" transform="translate(17.5 27.5)" fill="#113a55"/>
+  <rect id="Rectangle_420" data-name="Rectangle 420" width="5" height="3.75" transform="translate(17.5 21.25)" fill="#113a55"/>
+  <rect id="Rectangle_421" data-name="Rectangle 421" width="5" height="3.75" transform="translate(17.5 15)" fill="#113a55"/>
+  <rect id="Rectangle_422" data-name="Rectangle 422" width="5" height="3.75" transform="translate(26.25 27.5)" fill="#113a55"/>
+  <rect id="Rectangle_423" data-name="Rectangle 423" width="5" height="3.75" transform="translate(26.25 21.25)" fill="#113a55"/>
+  <rect id="Rectangle_424" data-name="Rectangle 424" width="5" height="3.75" transform="translate(26.25 15)" fill="#113a55"/>
+</svg>

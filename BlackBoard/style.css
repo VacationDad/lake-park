@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', 'Sintony', 'Merriweather Sans';
+    line-height: 1.5em;
+}
+h2{
+    color: #1c5687;
+    font-family: 'Merriweather';
+    font-style: bold;
+    font-size: 30px;
+}
+h5{
+    color: #333333;
+    font-family: 'Sintony';
+    font-size: 20px;
+}
+
+#site_wrap{
+    background-color: white;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 
+        1fr
+        repeat(4,minmax(0,330px))
+        1fr
+    ;
+    grid-template-rows: 
+    60px
+    135px
+    585px
+    566px
+    527px
+    254px
+    79px
+    ;
+    grid-template-areas: 
+    "header header header header header header"
+    "featured_header featured_header featured_header featured_header featured_header featured_header"
+    "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+    ". news_content news_content news_content news_content ."
+    "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
+    "footer footer footer footer footer footer"
+    "socials socials socials socials socials socials";
+}
+.header{
+    background-color: #1c5687;
+    grid-area: header;
+    font-family: 'Sintony';
+    font-style: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-container {
+    display: flex;
+    position: relative;
+    color: white;
+    padding: 0px 0px 0px 70px;
+    font-size: 18px;
+    align-items: center;
+}
+/* nav bar section */
+.nav{
+    list-style: none;
+    justify-content: start;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    float: left; 
+}
+.nav a.navlink{
+    text-decoration: none;
+    text-decoration-color: none;
+    padding: 18px 21px 18px 20px;
+}
+.nav a.navlink:visited{
+    text-decoration: none;
+    color: #ffff;
+
+}
+.nav a.navlink:active{
+    background-color: #113A55;
+    color: white;
+}
+
+/* dropdown button */
+.dropbtn {
+    background-color: #1c5687;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 18px 21px 18px 20px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    height: 21px;
+    min-width: 300px;
+    text-align: left;
+    box-shadow: 0px 0px 10px #00000075;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a.drop {
+    color: #1c5687;
+    font-family: 'Sintony';
+    font-style: bold;
+    font-size: 16px;
+    padding: 12px 16px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    display: block;
+    background-color: #ffff;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a.drop:hover{
+      background-color: #ffff;
+      color: #113A55;
+      text-decoration: underline;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #113A55;}
+
+  /* I cannot get this box to align to the right of my nav container */
+  .school-dropdown{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-left: auto;
+      z-index: 2;
+  }
+  .school-dropdown .dropdown-content{
+      align-items: right;
+      
+  }
+  .school-dropdown .dropbtn{
+      background-color: #dededd;
+      color: #113A55;
+      font-family: "Merriweather Sans";
+      font-style: bold;
+  }
+  .dropdown:hover .dropbtn {
+      background-color: #113A55;
+      color: #ffff;
+    }
+/* Sizes my container for the search icon */
+.search{
+    display: inline-flex;
+    background-color: #113A55;
+    padding-left: 22.24px;
+    padding-right: 22.24px;
+}
+/* featured header section */
+.featured_header{
+    background-color: #ffff;
+    grid-area: featured_header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.featured_header_container{
+    padding: 20px 19px 15px 91px;
+    display: inline-flex;
+    align-items: center;
+}
+.title-text {
+    padding-left: 19px
+}
+.global_icons{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.global_icons_wrapper{
+    padding: 1px;
+    display: inline;
+
+}
+
+
+
+
+
+.slider_wrap{
+    background-color: purple;
+    grid-area: slider_wrap
+}
+.news_content{
+    background-color: orange;
+    grid-area: news_content
+}
+.announcement_container{
+    background-color: gray;
+    grid-area: announcement_container
+}
+.footer{
+    background-color: cyan;
+    grid-area: footer
+}
+.socials{
+    background-color: yellow;
+    grid-area: socials
+}
+
+@media screen and (max-width:640px){
+    #site_wrap{
+        grid-template-areas: 
+        "header header header header header header"
+        "featured_header featured_header featured_header featured_header featured_header featured_header"
+        "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+        ". news_content news_content news_content news_content."
+        "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
+        "footer footer footer footer footer footer"
+        "socials socials socials socials socials socials"
+        ;
+    }
+}
+
+@media screen and (max-width:320px){
+    #site_wrap{
+        grid-template-areas: 
+        "header header header header header header"
+        "featured_header featured_header featured_header featured_header featured_header featured_header"
+        "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+        "news_content news_content news_content news_content news_content news_content"
+        "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
+        "footer footer footer footer footer footer"
+        "socials socials socials socials socials socials"
+        ;
+    }
+}
