@@ -37,7 +37,7 @@ h5{
     grid-template-areas: 
     "header header header header header header"
     "featured_header featured_header featured_header featured_header featured_header featured_header"
-    "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+    "slider-section slider-section slider-section slider-section slider-section slider-section"
     ". news_content news_content news_content news_content ."
     "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
     "footer footer footer footer footer footer"
@@ -200,15 +200,23 @@ h5{
     display: inline;
 
 }
-
-
-
-
-
-.slider_wrap{
+/* Styles my slider content */
+.slider-section{
     background-color: purple;
-    grid-area: slider_wrap
+    grid-area: slider-section
 }
+.photo-wrapper{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.photo-column1::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style for the mid news section, columns */
 .news_content{
     background-color: orange;
     grid-area: news_content
@@ -226,12 +234,13 @@ h5{
     grid-area: socials
 }
 
+/* hopefully repsonive for mobiles */
 @media screen and (max-width:640px){
     #site_wrap{
         grid-template-areas: 
         "header header header header header header"
         "featured_header featured_header featured_header featured_header featured_header featured_header"
-        "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+        "slider-section slider-section slider-section slider-section slider-section slider-section"
         ". news_content news_content news_content news_content."
         "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
         "footer footer footer footer footer footer"
@@ -245,7 +254,7 @@ h5{
         grid-template-areas: 
         "header header header header header header"
         "featured_header featured_header featured_header featured_header featured_header featured_header"
-        "slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap slider_wrap"
+        "slider-section slider-section slider-section slider-section slider-section slider-section"
         "news_content news_content news_content news_content news_content news_content"
         "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
         "footer footer footer footer footer footer"
