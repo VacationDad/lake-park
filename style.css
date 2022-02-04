@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    z-index: 0;
     font-family: 'Merriweather', 'Sintony', 'Merriweather Sans';
     line-height: 1.5em;
 }
@@ -202,36 +203,47 @@ h5{
 }
 /* Styles my slider content */
 .slider-section{
-    background-color: purple;
-    grid-area: slider-section
+    display: flex;
+    grid-area: slider-section;
+    
 }
+/* wraps my two photos in the slider */
 .photo-wrapper{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    z-index: 1;
 }
+/* clearfix, moves second photo to side, might need to change later */
 .photo-column1::after{
     content: "";
     clear: both;
     display: table;
 }
-
+.slider-overlay{
+    width: 100%;
+    z-index: 2;
+    background-color: yellow;
+}
+.overlay-column1{
+    float: left;
+}
 /* Style for the mid news section, columns */
 .news_content{
     background-color: orange;
-    grid-area: news_content
+    grid-area: news_content;
 }
 .announcement_container{
     background-color: gray;
-    grid-area: announcement_container
+    grid-area: announcement_container;
 }
 .footer{
     background-color: cyan;
-    grid-area: footer
+    grid-area: footer;
 }
 .socials{
     background-color: yellow;
-    grid-area: socials
+    grid-area: socials;
 }
 
 /* hopefully repsonive for mobiles */
