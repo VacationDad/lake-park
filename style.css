@@ -12,11 +12,22 @@ h2 {
   font-size: 1.875em;
   margin-bottom: 0;
 }
+h4 {
+  font-family: "Merriweather";
+  font-size: 22px;
+  color: #ffff;
+  text-align: left;
+}
 h5 {
   color: #333333;
   font-family: "Sintony";
   font-size: 1.25em;
   margin-top: 10px;
+}
+.slider-paragraph {
+  color: #ffff;
+  font-family: "Sintony";
+  font-size: 16px;
 }
 
 #site_wrap {
@@ -57,10 +68,10 @@ h5 {
   width: 100%;
   z-index: 10;
 }
-.nav{
+.nav {
   display: flex;
   position: relative;
-  color: white;
+  color: #ffffff;
   padding: 0px 0px 0px 70px;
   font-size: 1.125em;
   align-items: center;
@@ -80,11 +91,11 @@ h5 {
   text-decoration: none;
   text-decoration-color: none;
   padding: 18px 21px 18px 20px;
-  color: #ffff;
+  color: #ffffff;
 }
 .navbar a.navlink:visited {
   text-decoration: none;
-  color: #ffff;
+  color: #ffffff;
 }
 .navbar a.navlink:active {
   background-color: #113a55;
@@ -110,7 +121,7 @@ h5 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffff;
+  background-color: #ffffff;
   height: 21px;
   min-width: 300px;
   text-align: left;
@@ -129,12 +140,12 @@ h5 {
   letter-spacing: 0px;
   text-decoration: none;
   display: block;
-  background-color: #ffff;
+  background-color: #ffffff;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a.drop:hover {
-  background-color: #ffff;
+  background-color: #ffffff;
   color: #113a55;
   text-decoration: underline;
 }
@@ -168,7 +179,7 @@ h5 {
 }
 .dropdown:hover .dropbtn {
   background-color: #113a55;
-  color: #ffff;
+  color: #ffffff;
 }
 /* Sizes my container for the search icon */
 .search {
@@ -179,7 +190,7 @@ h5 {
 }
 /* featured header section */
 .featured_header {
-  background-color: #ffff;
+  background-color: #ffffff;
   grid-area: featured_header;
   display: flex;
   align-items: center;
@@ -187,13 +198,13 @@ h5 {
   width: 100%;
   vertical-align: top;
 }
-.featured_header_container{
+.featured_header_container {
   width: 100%;
   height: 100%;
   display: inline-flex;
   padding-top: 20px;
 }
-.logo{
+.logo {
   padding: 10px 19px 15px 91px;
   float: left;
   width: 116px;
@@ -203,20 +214,20 @@ h5 {
   flex-shrink: unset;
   flex-grow: unset;
 }
-.title-text{
+.title-text {
   width: 60%;
   word-spacing: 0.375em;
   height: auto;
   flex-wrap: wrap;
 }
-.global_icons{  
+.global_icons {
   display: inline-flex;
   align-items: center;
   text-align: center;
   font-size: 16px;
   padding: auto 98px auto 0px;
 }
-.global_icons_wrapper{
+.global_icons_wrapper {
   padding-top: 15px;
   padding-left: 47px;
   justify-content: center;
@@ -234,23 +245,89 @@ h5 {
   flex-direction: row;
   z-index: 1;
 }
-.photo-column1{width: 100%; height:auto;}
+.photo-column1 {
+  width: 100%;
+  height: auto;
+}
 /* clearfix, moves second photo to side, might need to change later */
-.photo-column1::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.photo-column2 {
+  object-fit: cover;
+  object-position: 50% 50%;
+  background-color: purple;
 }
 /* figure out why this isnt overlaying the photo.column2 image */
-.slider-overlay {
-  width: 100%;
+.slider-row {
   z-index: 2;
-  background-color: yellow;
-  opacity: 30%;
   display: flex;
   position: absolute;
-  max-height: 100%;
+  width: 100%;
   height: 585px;
+  max-height: 100%;
+}
+/* Handling of column split for div's layer above the slider photos*/
+.slider-column1 {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 119%; /* why isn't this working at 100% */
+}
+/* Wrapper for my slider icons */
+.slider-icon1 {
+  width: 35px;
+  height: 35px;
+  background-color: #113a55;
+  opacity: 0.9;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Change SVG color in jquery */
+}
+.slider-icon2 {
+  width: 35px;
+  height: 35px;
+  background-color: #113a55;
+  opacity: 0.9;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Change SVG color in jquery */
+}
+.slider-icon3 {
+  width: 35px;
+  height: 35px;
+  background-color: #113a55;
+  opacity: 0.9;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Change SVG color in jquery */
+  transform: rotate(180deg);
+}
+/* Column 2 is for the content on the right side of slider section (Welcome!) */
+.slider-column2 {
+  padding-left: 40px;
+  padding-top: 158px;
+  display: flex;
+  background-color: #1c5687;
+  opacity: 0.9;
+  max-width: 609px;
+  float: right;
+}
+
+.learn-more-btn {
+  background-color: #113a55;
+  border: none;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 16px;
+  font: "Merriweather Sans";
+  border-radius: 5px;
 }
 /* Style for the mid news section, columns */
 .news_content {
