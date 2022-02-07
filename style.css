@@ -10,11 +10,13 @@ h2 {
   font-family: "Merriweather";
   font-style: bold;
   font-size: 1.875em;
+  margin-bottom: 0;
 }
 h5 {
   color: #333333;
   font-family: "Sintony";
   font-size: 1.25em;
+  margin-top: 10px;
 }
 
 #site_wrap {
@@ -64,7 +66,6 @@ h5 {
   align-items: center;
   width: 100%;
   height: 60px;
-  flex-shrink: none;
 }
 /* nav bar section */
 .navbar {
@@ -181,46 +182,59 @@ h5 {
   background-color: #ffff;
   grid-area: featured_header;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  vertical-align: top;
 }
-.featured_header_container {
-  padding: 20px 19px 15px 91px;
-  display: flex;
+.featured_header_container{
   width: 100%;
-  align-items: center;
-  position: relative;
-  max-height: 135px;
+  height: 100%;
+  display: inline-flex;
+  padding-top: 20px;
 }
-.title-text {
-  padding-left: 19px;
+.logo{
+  padding: 10px 19px 15px 91px;
   float: left;
+  width: 116px;
+  height: 100px;
+  max-width: 116px;
+  max-height: 100px;
+  flex-shrink: unset;
+  flex-grow: unset;
 }
-.global_icons {
-    display: inline-flex;
-    position: relative;
-    float: right;
-    justify-content: flex-end;
-    align-items: center;
+.title-text{
+  width: 60%;
+  word-spacing: 0.375em;
+  height: auto;
+  flex-wrap: wrap;
 }
-.global_icons_wrapper {
-  padding: 1px;
-  display: inline;
+.global_icons{  
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: auto 98px auto 0px;
+}
+.global_icons_wrapper{
+  padding-top: 15px;
+  padding-left: 47px;
+  justify-content: center;
+  align-self: baseline;
 }
 /* Styles my slider content */
 .slider-section {
   display: flex;
   grid-area: slider-section;
+  overflow: hidden;
 }
 /* wraps my two photos in the slider */
 .photo-wrapper {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   z-index: 1;
 }
+.photo-column1{width: 100%; height:auto;}
 /* clearfix, moves second photo to side, might need to change later */
 .photo-column1::after {
   content: "";
@@ -233,9 +247,10 @@ h5 {
   z-index: 2;
   background-color: yellow;
   opacity: 30%;
-}
-.overlay-column1 {
-  float: left;
+  display: flex;
+  position: absolute;
+  max-height: 100%;
+  height: 585px;
 }
 /* Style for the mid news section, columns */
 .news_content {
