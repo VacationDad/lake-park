@@ -5,6 +5,12 @@ body {
   font-family: "Merriweather", "Sintony", "Merriweather Sans";
   line-height: 1.5em;
 }
+h1 {
+  color: #1c5687;
+  font-family: "Merriweather";
+  font-weight: bold;
+  font-size: 34px;
+}
 h2 {
   color: #1c5687;
   font-family: "Merriweather";
@@ -53,7 +59,7 @@ h5 {
     "header header header header header header"
     "featured_header featured_header featured_header featured_header featured_header featured_header"
     "slider-section slider-section slider-section slider-section slider-section slider-section"
-    ". news_content news_content news_content news_content ."
+    "news_content news_content news_content news_content news_content news_content"
     "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
     "footer footer footer footer footer footer"
     "socials socials socials socials socials socials";
@@ -361,13 +367,56 @@ h5 {
   text-transform: uppercase;
   font-size: 16px;
   font: "Merriweather Sans";
+  font-weight: bold;
   border-radius: 5px;
 }
 /* Style for the mid news section, columns */
 .news_content {
-  background-color: orange;
+  background-color: #ffffff;
   grid-area: news_content;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 43px;
+  padding-bottom: 60px;
 }
+/* Contains my header content ("current news + more button */
+.news-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.more-btn {
+  background-color: #113a55;
+  opacity: 1;
+  border: none;
+  color: #ffffff;
+  width: 87px;
+  height: 45px;
+  padding: 13px 20px 12px 19px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font: "Merriweather Sans";
+  font-weight: bold;
+  border-radius: 5px;
+}
+/* Creates the four columns for the news row */
+.news-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  gap: 50px;
+}
+.news-image {
+  width: 330px;
+  height: 240px;
+}
+/* Handles the news columns */
+.news-column {
+  max-width: 330px;
+  justify-content: space-evenly;
+}
+/* For announcement content */
 .announcement_container {
   background-color: gray;
   grid-area: announcement_container;
