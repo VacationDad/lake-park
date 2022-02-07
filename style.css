@@ -15,12 +15,14 @@ h2 {
 h4 {
   font-family: "Merriweather";
   font-size: 22px;
+  font-weight: bold;
   color: #ffff;
   text-align: left;
 }
 h5 {
   color: #333333;
   font-family: "Sintony";
+  font-weight: normal;
   font-size: 1.25em;
   margin-top: 10px;
 }
@@ -28,6 +30,7 @@ h5 {
   color: #ffff;
   font-family: "Sintony";
   font-size: 16px;
+  line-height: 25px;
 }
 
 #site_wrap {
@@ -122,12 +125,12 @@ h5 {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  height: 21px;
+  height: 100%;
   min-width: 300px;
   text-align: left;
-  box-shadow: 0px 0px 10px #00000075;
   opacity: 1;
   z-index: 1;
+  padding-top: 20px;
 }
 
 /* Links inside the dropdown */
@@ -136,11 +139,12 @@ h5 {
   font-family: "Sintony";
   font-style: bold;
   font-size: 16px;
-  padding: 12px 16px;
   letter-spacing: 0px;
   text-decoration: none;
   display: block;
   background-color: #ffffff;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 /* Change color of dropdown links on hover */
@@ -160,22 +164,47 @@ h5 {
   background-color: #113a55;
 }
 
-/* I cannot get this box to align to the right of my nav container */
+/* Keeps my dropdown positioned to right side */
 .school-dropdown {
   display: inline-flex;
-  align-items: center;
+  justify-content: flex-end;
   margin-left: auto;
-  float: right;
   z-index: 2;
 }
-.school-dropdown .dropdown-content {
-  align-items: right;
+/* Makes dropdown for school visible under 'schools'*/
+.dropdown:hover .dropdown-content-school {
+  display: block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-school {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  height: 100%;
+  min-width: 260px;
+  text-align: left;
+  opacity: 1;
+  z-index: 1;
+  padding-top: 20px;
 }
 .school-dropdown .dropbtn {
   background-color: #dededd;
   color: #113a55;
   font-family: "Merriweather Sans";
   font-style: bold;
+}
+.dropdown-content-school a.drop {
+  color: #1c5687;
+  font-family: "Sintony";
+  font-style: bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  display: block;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .dropdown:hover .dropbtn {
   background-color: #113a55;
@@ -205,14 +234,13 @@ h5 {
   padding-top: 20px;
 }
 .logo {
-  padding: 10px 19px 15px 91px;
+  padding: 10px 19px 15px;
+  margin-left: 91px;
   float: left;
   width: 116px;
   height: 100px;
   max-width: 116px;
   max-height: 100px;
-  flex-shrink: unset;
-  flex-grow: unset;
 }
 .title-text {
   width: 60%;
@@ -269,6 +297,8 @@ h5 {
 .slider-column1 {
   display: inline-flex;
   justify-content: flex-end;
+  align-self: flex-end;
+  padding-bottom: 15px;
   width: 119%; /* why isn't this working at 100% */
 }
 /* Wrapper for my slider icons */
@@ -277,6 +307,7 @@ h5 {
   height: 35px;
   background-color: #113a55;
   opacity: 0.9;
+  margin-right: 5px;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -287,6 +318,7 @@ h5 {
 .slider-icon2 {
   width: 35px;
   height: 35px;
+  margin-right: 5px;
   background-color: #113a55;
   opacity: 0.9;
   border: none;
@@ -299,6 +331,7 @@ h5 {
 .slider-icon3 {
   width: 35px;
   height: 35px;
+  margin-right: 15px;
   background-color: #113a55;
   opacity: 0.9;
   border: none;
@@ -314,17 +347,18 @@ h5 {
   padding-left: 40px;
   padding-top: 158px;
   display: flex;
-  background-color: #1c5687;
-  opacity: 0.9;
+  background-color: rgba(28, 86, 135, 0.9);
   max-width: 609px;
   float: right;
 }
 
 .learn-more-btn {
   background-color: #113a55;
+  opacity: 1;
   border: none;
   color: #ffffff;
-  padding: 5px;
+  padding: 13px 20px 12px 19px;
+  text-transform: uppercase;
   font-size: 16px;
   font: "Merriweather Sans";
   border-radius: 5px;
