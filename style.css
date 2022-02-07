@@ -10,6 +10,8 @@ h1 {
   font-family: "Merriweather";
   font-weight: bold;
   font-size: 34px;
+  margin-top: 43px;
+  margin-bottom: 32px;
 }
 h2 {
   color: #1c5687;
@@ -31,6 +33,14 @@ h5 {
   font-weight: normal;
   font-size: 1.25em;
   margin-top: 10px;
+}
+h6 {
+  font-family: "Sintony";
+  font-style: bold;
+  font-size: 22px;
+  line-height: none;
+  color: #1c5687;
+  margin: 12px auto 12px auto;
 }
 .slider-paragraph {
   color: #ffff;
@@ -376,7 +386,6 @@ h5 {
   grid-area: news_content;
   padding-left: 90px;
   padding-right: 90px;
-  padding-top: 43px;
   padding-bottom: 60px;
 }
 /* Contains my header content ("current news + more button */
@@ -384,7 +393,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 32px;
 }
 .more-btn {
   background-color: #113a55;
@@ -404,7 +412,6 @@ h5 {
 .news-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 60px;
   gap: 50px;
 }
 .news-image {
@@ -414,7 +421,9 @@ h5 {
 /* Handles the news columns */
 .news-column {
   max-width: 330px;
-  justify-content: space-evenly;
+  max-height: 389px;
+  padding-bottom: 60px;
+  flex: auto;
 }
 /* For announcement content */
 .announcement_container {
