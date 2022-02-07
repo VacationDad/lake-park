@@ -427,8 +427,33 @@ h6 {
 }
 /* For announcement content */
 .announcement_container {
-  background-color: gray;
+  background-color: #1c5687;
   grid-area: announcement_container;
+}
+.announcement-site-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: top;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+.announcement-site-column {
+  background-color: #ffffff;
+  width: 720px;
+  min-height: 407px;
+}
+.site-shortcut-column {
+  background-color: purple;
+  width: 720px;
+  min-height: 407px;
+}
+/* Handles my site shortcut list*/
+.site-shortcut-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer {
   background-color: cyan;
