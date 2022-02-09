@@ -196,6 +196,7 @@ h6 {
   display: inline-flex;
   justify-content: flex-end;
   margin-left: auto;
+  background-color: #dededd;
   z-index: 2;
 }
 /* Icon in the School Dropdown */
