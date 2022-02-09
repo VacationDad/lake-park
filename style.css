@@ -48,7 +48,16 @@ h6 {
   font-size: 16px;
   line-height: 25px;
 }
-
+.line-breaks{
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: thin solid #333333;
+  height: 1px;
+  opacity: 0.2;
+}
 #site_wrap {
   background-color: white;
   height: 100vh;
@@ -292,10 +301,12 @@ h6 {
 .photo-column1 {
   width: 100%;
   height: auto;
+  display: inline-flex;
 }
 /* clearfix, moves second photo to side, might need to change later */
 
 .photo-column2 {
+
   object-fit: cover;
   object-position: 50% 50%;
   background-color: purple;
@@ -433,18 +444,32 @@ h6 {
 .announcement-site-row {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  vertical-align: top;
+  align-items: top;
+  width: 100%;
+  height: 407px;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 100%;
 }
-.announcement-site-column {
+.announcement-text{
+  font-family: "Merriweather";
+  font-style: bold;
+  font-size: 26px;
+  color: #1c5687;
+  padding-bottom: 20px;
+}
+p.announcement-text{
+  color: #333333;
+  font-size: 16px;
+  font-family: "Sintony";
+  text-align: left;
+  padding-bottom: 0px;
+}
+.announcement-site-column{
   background-color: #ffffff;
   width: 720px;
-  min-height: 407px;
+  padding: 20px 30px 39px 20px;
 }
-.site-shortcut-column {
+.site-shortcut-column{
   background-color: purple;
   width: 720px;
   min-height: 407px;
@@ -454,6 +479,21 @@ h6 {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.site-shortcut-text{
+  font-family: "Merriweather";
+  font-style: bold;
+  font-size: 26px;
+  color: #1c5687;
+  padding-bottom: 20px;
+}
+p.site-shortcut-text{
+  color: #1c5687;
+  font-family: "Sintony";
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  padding-bottom: 0;
 }
 .footer {
   background-color: cyan;
