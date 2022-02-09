@@ -48,7 +48,7 @@ h6 {
   font-size: 16px;
   line-height: 25px;
 }
-.line-breaks{
+.line-breaks {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
@@ -188,13 +188,23 @@ h6 {
 .dropdown:hover .dropbtn {
   background-color: #113a55;
 }
-
+.school-dropdown .dropbtn {
+  background-color: #dededd;
+}
 /* Keeps my dropdown positioned to right side */
 .school-dropdown {
   display: inline-flex;
   justify-content: flex-end;
   margin-left: auto;
   z-index: 2;
+}
+/* Icon in the School Dropdown */
+.school-arrow-icon {
+  width: 7.92px;
+  height: 11.79px;
+  z-index: 2;
+  background-color: violet;
+  display: inline-flex;
 }
 /* Makes dropdown for school visible under 'schools'*/
 .dropdown:hover .dropdown-content-school {
@@ -214,7 +224,6 @@ h6 {
   padding-top: 20px;
 }
 .school-dropdown .dropbtn {
-  background-color: #dededd;
   color: #113a55;
   font-family: "Merriweather Sans";
   font-style: bold;
@@ -289,27 +298,30 @@ h6 {
 /* Styles my slider content */
 .slider-section {
   display: flex;
-  grid-area: slider-section;
   overflow: hidden;
+  grid-area: slider-section;
 }
 /* wraps my two photos in the slider */
 .photo-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  float: right;
   z-index: 1;
 }
 .photo-column1 {
-  width: 100%;
   height: auto;
   display: inline-flex;
+  min-width: 1071px;
 }
 /* clearfix, moves second photo to side, might need to change later */
 
 .photo-column2 {
-
   object-fit: cover;
+  display: inline-flex;
   object-position: 50% 50%;
   background-color: purple;
+  min-width: 609px;
 }
 /* figure out why this isnt overlaying the photo.column2 image */
 .slider-row {
@@ -450,26 +462,26 @@ h6 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.announcement-text{
+.announcement-text {
   font-family: "Merriweather";
   font-style: bold;
   font-size: 26px;
   color: #1c5687;
   padding-bottom: 20px;
 }
-p.announcement-text{
+p.announcement-text {
   color: #333333;
   font-size: 16px;
   font-family: "Sintony";
   text-align: left;
   padding-bottom: 0px;
 }
-.announcement-site-column{
+.announcement-site-column {
   background-color: #ffffff;
   width: 720px;
   padding: 20px 30px 39px 20px;
 }
-.site-shortcut-column{
+.site-shortcut-column {
   background-color: purple;
   width: 720px;
   min-height: 407px;
@@ -480,14 +492,14 @@ p.announcement-text{
   margin: 0;
   padding: 0;
 }
-.site-shortcut-text{
+.site-shortcut-text {
   font-family: "Merriweather";
   font-style: bold;
   font-size: 26px;
   color: #1c5687;
   padding-bottom: 20px;
 }
-p.site-shortcut-text{
+p.site-shortcut-text {
   color: #1c5687;
   font-family: "Sintony";
   font-weight: bold;
