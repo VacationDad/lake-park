@@ -97,12 +97,9 @@ p{
     "footer footer footer footer footer footer"
     "socials socials socials socials socials socials";
 }
-.header {
+.header{
   background-color: #1c5687;
   grid-area: header;
-  font-family: 'Sintony', sans-serif;
-  font-weight: bold;
-  font-size: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -130,6 +127,12 @@ p{
   float: left;
   height: 100%;
 }
+.navlink{
+  font-family: 'Sintony', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
 .navbar a.navlink {
   text-decoration: none;
   text-decoration-color: none;
@@ -154,6 +157,10 @@ p{
 /* dropdown button */
 .dropbtn {
   background-color: #1c5687;
+  font-family: 'Sintony', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
   color: white;
   font-size: 18px;
   border: none;
