@@ -221,6 +221,7 @@ p{
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: auto;
+  height: 100%;
   z-index: 2;
 }
 /* Icon in the School Dropdown */
@@ -250,10 +251,14 @@ p{
   padding-top: 20px;
   box-shadow: 0px 0px 10px 0px #00000075;
 }
+.school-dropdown .dropdown{
+  height: 100%;
+}
 .school-dropdown .dropbtn {
   color: #113a55;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
+  font-size: 16px;
 }
 .dropdown-content-school a.drop {
   color: #1c5687;
