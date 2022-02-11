@@ -40,6 +40,7 @@ h5 {
   font-weight: normal;
   font-size: 1.25em;
   margin-top: 10px;
+  padding-bottom: 20px;
 }
 h6 {
   font-family: 'Sintony', sans-serif;
@@ -62,6 +63,7 @@ p{
   font-family: 'Sintony', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  margin: 0;
 }
 .line-breaks {
   height: 1px;
@@ -429,7 +431,7 @@ p{
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
   font-size: 16px;
-  font: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -457,7 +459,7 @@ p{
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
   font-size: 16px;
-  font: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -495,7 +497,11 @@ p{
 .announcement-site-column {
   background-color: #ffffff;
   width: 720px;
-  padding: 20px 30px 39px 20px;
+  padding: 24px 30px 39px 30px;
+}
+.text-container{
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 .site-shortcut-column {
   background-color: purple;
