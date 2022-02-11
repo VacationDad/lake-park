@@ -25,6 +25,7 @@ h3{
   font-weight: 700;
   color: #1c5687;
   font-size: 26px;
+  margin: 0;
 }
 h4 {
   font-family: 'Merriweather', serif;
@@ -63,14 +64,11 @@ p{
   font-size: 16px;
 }
 .line-breaks {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: thin solid #333333;
   height: 1px;
-  opacity: 0.2;
+  border: 0;
+  background-color: #333333;
+  color: #333333;
+  opacity: 0.4;
 }
 #site_wrap {
   background-color: white;
