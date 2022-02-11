@@ -127,27 +127,33 @@ p{
   float: left;
   height: 100%;
 }
-.navlink{
+.header .nav .navbar a.navlink{
   font-family: 'Sintony', sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: 400;
-}
-.navbar a.navlink {
   text-decoration: none;
   text-decoration-color: none;
   padding: 18px 21px 18px 20px;
-  color: #ffffff;
 }
-.navbar a.navlink:visited {
+.header .nav .navbar .navlink-active{
+  font-family: 'Sintony', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #113a55;
+  font-weight: 400;
+  text-decoration: none;
+  text-decoration-color: none;
+  padding: 18px 21px 18px 20px;
+}
+.header .nav .navbar a.navlink:visited {
   text-decoration: none;
   color: #ffffff;
 }
-.navbar a.navlink:active {
+.header .nav .navbar a.navlink:hover {
   background-color: #113a55;
   color: white;
 }
-
 /* The container <div> - needed to position the dropdown content */
 .nav-dropdown{
   display: flex;
