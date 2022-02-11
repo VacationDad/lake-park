@@ -136,7 +136,7 @@ p{
   text-decoration-color: none;
   padding: 18px 21px 18px 20px;
 }
-.header .nav .navbar a.current{
+.header .nav .navbar .navlink-active{
   font-family: 'Sintony', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -150,7 +150,7 @@ p{
   text-decoration: none;
   color: #ffffff;
 }
-.header .nav .navbar a.navlink:active, .header .nav .navbar a.navlink:hover {
+.header .nav .navbar a.navlink:hover {
   background-color: #113a55;
   color: white;
 }
