@@ -264,6 +264,7 @@ p{
   padding: 10px 651px 0 19px;
   word-spacing: 0.375em;
 }
+/* Styles my featured header text */
 .title-text h1 {
   color: #1c5687;
   font-family: 'Merriweather', serif;
@@ -322,7 +323,6 @@ p{
   min-width: 1071px;
 }
 /* clearfix, moves second photo to side, might need to change later */
-
 .photo-column2 {
   object-fit: cover;
   display: inline-flex;
@@ -405,7 +405,7 @@ p{
   max-width: 609px;
   float: right;
 }
-
+/* Learn more button in slider */
 .learn-more-btn {
   background-color: #113a55;
   opacity: 1;
@@ -422,16 +422,17 @@ p{
 .news_content {
   background-color: #ffffff;
   grid-area: news_content;
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 /* Contains my header content ("current news + more button */
 .news-content-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
+/* Styles news contenter text*/
 .news-content-header h1{
   color: #1c5687;
   font-family: 'Merriweather', serif;
@@ -448,6 +449,7 @@ p{
   color: #1c5687;
   margin: 12px auto 12px auto;
 }
+/* More Button in News Column*/
 .more-btn {
   background-color: #113a55;
   opacity: 1;
@@ -465,7 +467,7 @@ p{
 /* Creates the four columns for the news row */
 .news-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 50px;
 }
 .news-image {
@@ -482,8 +484,11 @@ p{
 /* For announcement content */
 .announcement_container {
   background-color: #1c5687;
+  display: flex;
+  justify-content: center;
   grid-area: announcement_container;
 }
+/* Styles h3*/
 .announcement-site-row h3{
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -493,18 +498,13 @@ p{
 }
 .announcement-site-row {
   display: flex;
-  justify-content: center;
-  align-items: top;
-  width: 1680px;
-  height: 407px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  justify-content: space-evenly;
+  margin: auto;
 }
 .announcement-site-column {
   background-color: #ffffff;
   width: 720px;
   padding: 24px 30px 39px 30px;
-  margin: 0 60px 0 90px;
   height: 407px;
 }
 .announcement-site-column p{
@@ -524,12 +524,14 @@ p{
 }
 .site-column{
   background-color:#ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 720px;
-  margin: 0 20px;
   padding: 24px 30px 39px 30px;
   height: 407px;
 }
-/* Handles my site shortcut list*/
+/* Styles my site shortcut list*/
 .site-column h3{
   font-family: 'Merriweather', serif;
   font-weight: bold;
@@ -541,6 +543,7 @@ p{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 291px;
 }
 .site-column li{
   color: #1c5687;
@@ -551,8 +554,39 @@ p{
   padding-bottom: 0;
 }
 .footer {
-  background-color: cyan;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
   grid-area: footer;
+}
+/* Line behind footer container */
+.footer hr{
+  z-index: 0;
+  height: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+/* Styles my footer text */
+.footer p{
+  color: #1c5687;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 15.25px;
+}
+.footer .footer-container hr{
+  height: 26px;
+  color: #1c5687;
+  opacity: 1;
+}
+.footer-container{
+  z-index: 10;
+}
+.contact-info{
+  display: flex;
+  flex-direction: row;
 }
 .socials {
   background-color: yellow;
@@ -566,7 +600,7 @@ p{
       "header header header header header header"
       "featured_header featured_header featured_header featured_header featured_header featured_header"
       "slider-section slider-section slider-section slider-section slider-section slider-section"
-      ". news_content news_content news_content news_content."
+      ". news_content news_content news_content news_content ."
       "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
       "footer footer footer footer footer footer"
       "socials socials socials socials socials socials";
