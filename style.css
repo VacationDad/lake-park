@@ -10,14 +10,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
 }
-p{
-  font-family: 'Sintony', sans-serif;
+p {
+  font-family: "Sintony", sans-serif;
 }
 .line-breaks {
   height: 1px;
   border: 0;
-  background-color: #333333;
-  color: #333333;
+  background-color: #7d9299;
+  color: #7d9299;
   opacity: 0.4;
   margin: 10px 0;
 }
@@ -46,7 +46,7 @@ p{
     "footer footer footer footer footer footer"
     "socials socials socials socials socials socials";
 }
-.header{
+.header {
   background-color: #1c5687;
   grid-area: header;
   display: flex;
@@ -69,42 +69,40 @@ p{
 /* nav bar section */
 .navbar {
   list-style: none;
-  justify-content: start;
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  float: left;
   height: 100%;
 }
-.header .nav .navbar a.navlink{
-  font-family: 'Sintony', sans-serif;
+.navbar a.navlink {
+  font-family: "Sintony", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   text-decoration-color: none;
   padding: 18px 21px 18px 20px;
+  align-items: center;
 }
-.header .nav .navbar .navlink-active{
-  font-family: 'Sintony', sans-serif;
+.navbar .navlink-active {
+  font-family: "Sintony", sans-serif;
   font-size: 18px;
   color: #ffffff;
   background-color: #113a55;
   font-weight: 400;
   text-decoration: none;
-  text-decoration-color: none;
   padding: 18px 21px 18px 20px;
 }
-.header .nav .navbar a.navlink:visited {
+.navbar a.navlink:visited {
   text-decoration: none;
   color: #ffffff;
 }
-.header .nav .navbar a.navlink:hover {
+.navbar a.navlink:hover {
   background-color: #113a55;
   color: white;
 }
 /* The container <div> - needed to position the dropdown content */
-.nav-dropdown{
+.nav-dropdown {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -112,7 +110,7 @@ p{
 /* dropdown button */
 .dropbtn {
   background-color: #1c5687;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: 400;
@@ -138,7 +136,7 @@ p{
 /* Links inside the dropdown */
 .dropdown-content a.drop {
   color: #1c5687;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0px;
@@ -205,18 +203,18 @@ p{
   padding-top: 20px;
   box-shadow: 0px 0px 10px 0px #00000075;
 }
-.school-dropdown .dropdown{
+.school-dropdown .dropdown {
   height: 100%;
 }
 .school-dropdown .dropbtn {
   color: #113a55;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
 .dropdown-content-school a.drop {
   color: #1c5687;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0px;
@@ -226,7 +224,7 @@ p{
   padding-left: 20px;
   padding-bottom: 20px;
 }
-.dropdown-content-school a.drop:hover{
+.dropdown-content-school a.drop:hover {
   background-color: #ffffff;
   color: #113a55;
   text-decoration: underline;
@@ -267,14 +265,14 @@ p{
 /* Styles my featured header text */
 .title-text h1 {
   color: #1c5687;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1.875em;
   margin-bottom: 0;
 }
 .title-text h2 {
   color: #333333;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: normal;
   font-size: 1.25em;
   margin-top: 10px;
@@ -302,7 +300,7 @@ p{
   grid-area: slider-section;
 }
 .slider-row h4 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 22px;
   padding-bottom: 20px;
   font-weight: bold;
@@ -339,9 +337,9 @@ p{
   height: 585px;
   max-height: 100%;
 }
-.slider-row p{
+.slider-row p {
   color: #ffff;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-size: 16px;
   padding-bottom: 18px;
   padding-right: 90px;
@@ -414,7 +412,7 @@ p{
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
   font-size: 16px;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -433,16 +431,16 @@ p{
   align-items: center;
 }
 /* Styles news contenter text*/
-.news-content-header h1{
+.news-content-header h1 {
   color: #1c5687;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 34px;
   margin-top: 43px;
   margin-bottom: 32px;
 }
 .news-column h2 {
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 22px;
   line-height: none;
@@ -460,7 +458,7 @@ p{
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
   font-size: 16px;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -489,8 +487,8 @@ p{
   grid-area: announcement_container;
 }
 /* Styles h3*/
-.announcement-site-row h3{
-  font-family: 'Merriweather', serif;
+.announcement-site-row h3 {
+  font-family: "Merriweather", serif;
   font-weight: 700;
   color: #1c5687;
   font-size: 26px;
@@ -505,15 +503,16 @@ p{
   background-color: #ffffff;
   width: 720px;
   padding: 24px 30px 39px 30px;
+  margin-right: 60px;
   height: 407px;
 }
-.announcement-site-column p{
-  font-family: 'Sintony', sans-serif;
+.announcement-site-column p {
+  font-family: "Sintony", sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin: 0;
 }
-.text-container{
+.text-container {
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -522,8 +521,8 @@ p{
   width: 720px;
   min-height: 407px;
 }
-.site-column{
-  background-color:#ffff;
+.site-column {
+  background-color: #ffff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -532,11 +531,11 @@ p{
   height: 407px;
 }
 /* Styles my site shortcut list*/
-.site-column h3{
-  font-family: 'Merriweather', serif;
+.site-column h3 {
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 26px;
-  color:#1c5687;
+  color: #1c5687;
   padding-bottom: 20px;
 }
 .site-column ul {
@@ -545,9 +544,9 @@ p{
   padding: 0;
   height: 291px;
 }
-.site-column li{
+.site-column li {
   color: #1c5687;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-align: left;
@@ -561,32 +560,73 @@ p{
   grid-area: footer;
 }
 /* Line behind footer container */
-.footer hr{
+.footer hr {
   z-index: 0;
-  height: 10px;
-  width: 100vw;
+  height: 26px;
   display: flex;
   justify-content: center;
+  border-left: 1px solid #7d9299;
 }
 /* Styles my footer text */
-.footer p{
+.footer p {
   color: #1c5687;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 20px;
   padding: 0 15.25px;
 }
-.footer .footer-container hr{
-  height: 26px;
+.footer a {
   color: #1c5687;
-  opacity: 1;
+  text-decoration: none;
+  text-decoration-color: none;
 }
-.footer-container{
-  z-index: 10;
+.footer a:visited {
+  text-decoration-color: none;
 }
-.contact-info{
+.footer a:hover {
+  background-color: #ffffff;
+  color: #113a55;
+  text-decoration: underline;
+}
+.contact-info {
   display: flex;
   flex-direction: row;
+  margin-bottom: 47px;
+}
+.footer-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.footer button {
+  background-color: #113a55;
+  opacity: 1;
+  border: none;
+  color: #ffffff;
+  padding: 13px 20px 12px 19px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.backtotop-btn {
+  margin-left: 10px;
+}
+.backtotop-btn img {
+  transform: rotate(90deg);
+  margin-right: 5.14px;
+}
+.additional-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.additional-links a,
+.additional-links p {
+  padding: 0 5px;
+  font-size: 16px;
 }
 .socials {
   background-color: yellow;
