@@ -505,6 +505,8 @@ p {
   padding: 24px 30px 39px 30px;
   margin-right: 60px;
   height: 407px;
+  border: 1px solid #7d9299;
+  border-radius: 4px;
 }
 .announcement-site-column p {
   font-family: "Sintony", sans-serif;
@@ -591,6 +593,7 @@ p {
 .contact-info {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-bottom: 47px;
 }
 .footer-button-container {
@@ -598,17 +601,24 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 36px;
+  width: 100%;
 }
 .footer button {
   background-color: #113a55;
   opacity: 1;
-  border: none;
+  border: 1px solid #113a55;
   color: #ffffff;
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
   font-size: 16px;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
+  border-radius: 5px;
+}
+.footer button:hover {
+  background-color: #f7f7f7;
+  color: #1c5687;
+  border: 1px solid #7d9299;
   border-radius: 5px;
 }
 .backtotop-btn {
@@ -623,17 +633,69 @@ p {
   align-items: center;
   justify-content: center;
 }
-.additional-links a,
-.additional-links p {
-  padding: 0 5px;
+.additional-links a {
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: #1c5687;
+  font-family: "Sintony", sans-serif;
+  font-weight: bold;
   font-size: 16px;
 }
+.additional-links a:hover {
+  text-decoration: underline;
+}
 .socials {
-  background-color: yellow;
+  background-color: #1c5687;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: socials;
 }
-
+.socials p {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
+  text-align: center;
+  margin-right: 47.06px;
+}
+.socials img {
+  padding-right: 50px;
+}
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 /* hopefully repsonive for mobiles */
+@media screen and (max-width: 1024px) {
+  #site_wrap {
+    grid-template-areas:
+      "header header header header header header"
+      "featured_header featured_header featured_header featured_header featured_header featured_header"
+      "slider-section slider-section slider-section slider-section slider-section slider-section"
+      ". news_content news_content news_content news_content ."
+      "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
+      "footer footer footer footer footer footer"
+      "socials socials socials socials socials socials";
+  }
+  .title-text {
+    padding: 10px 0 0 19px;
+  }
+  .news_content {
+    background-color: #ffffff;
+    grid-area: news_content;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  .news_content div {
+    max-width: 1024px;
+  }
+}
 @media screen and (max-width: 640px) {
   #site_wrap {
     grid-template-areas:
@@ -646,7 +708,6 @@ p {
       "socials socials socials socials socials socials";
   }
 }
-
 @media screen and (max-width: 320px) {
   #site_wrap {
     grid-template-areas:
