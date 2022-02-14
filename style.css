@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -5,65 +10,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
 }
-h1 {
-  color: #1c5687;
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-  font-size: 34px;
-  margin-top: 43px;
-  margin-bottom: 32px;
-}
-h2 {
-  color: #1c5687;
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
-  font-size: 1.875em;
-  margin-bottom: 0;
-}
-h3{
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
-  color: #1c5687;
-  font-size: 26px;
-  margin: 0;
-}
-h4 {
-  font-family: 'Merriweather', serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #ffff;
-  text-align: left;
-}
-h5 {
-  color: #333333;
-  font-family: 'Sintony', sans-serif;
-  font-weight: normal;
-  font-size: 1.25em;
-  margin-top: 10px;
-  padding-bottom: 20px;
-}
-h6 {
-  font-family: 'Sintony', sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: none;
-  color: #1c5687;
-  margin: 12px auto 12px auto;
-}
 p{
   font-family: 'Sintony', sans-serif;
-}
-.slider-paragraph {
-  color: #ffff;
-  font-family: 'Sintony', sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-}
-.announcement-text {
-  font-family: 'Sintony', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin: 0;
 }
 .line-breaks {
   height: 1px;
@@ -71,6 +19,7 @@ p{
   background-color: #333333;
   color: #333333;
   opacity: 0.4;
+  margin: 10px 0;
 }
 #site_wrap {
   background-color: white;
@@ -296,39 +245,47 @@ p{
 /* featured header section */
 .featured_header {
   background-color: #ffffff;
-  grid-area: featured_header;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  vertical-align: top;
+  grid-area: featured_header;
 }
 .featured_header_container {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  display: inline-flex;
-  padding-top: 20px;
+  vertical-align: top;
+  padding: 20px 0 15px 91px;
 }
 .logo {
-  padding: 10px 19px 15px;
-  margin-left: 91px;
   float: left;
   width: 116px;
   height: 100px;
-  max-width: 116px;
-  max-height: 100px;
 }
 .title-text {
-  width: 60%;
+  padding: 10px 651px 0 19px;
   word-spacing: 0.375em;
-  height: auto;
-  flex-wrap: wrap;
+}
+.title-text h1 {
+  color: #1c5687;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.875em;
+  margin-bottom: 0;
+}
+.title-text h2 {
+  color: #333333;
+  font-family: 'Sintony', sans-serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  margin-top: 10px;
+  padding-bottom: 20px;
 }
 .global_icons {
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
   font-size: 16px;
+  float: right;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
   padding: auto 98px auto 0px;
 }
 .global_icons_wrapper {
@@ -342,6 +299,14 @@ p{
   display: flex;
   overflow: hidden;
   grid-area: slider-section;
+}
+.slider-row h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #ffff;
+  text-align: left;
 }
 /* wraps my two photos in the slider */
 .photo-wrapper {
@@ -373,6 +338,14 @@ p{
   width: 100%;
   height: 585px;
   max-height: 100%;
+}
+.slider-row p{
+  color: #ffff;
+  font-family: 'Sintony', sans-serif;
+  font-size: 16px;
+  padding-bottom: 18px;
+  padding-right: 90px;
+  line-height: 25px;
 }
 /* Handling of column split for div's layer above the slider photos*/
 .slider-column1 {
@@ -459,6 +432,22 @@ p{
   align-items: center;
   justify-content: space-between;
 }
+.news-content-header h1{
+  color: #1c5687;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: 43px;
+  margin-bottom: 32px;
+}
+.news-column h2 {
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: none;
+  color: #1c5687;
+  margin: 12px auto 12px auto;
+}
 .more-btn {
   background-color: #113a55;
   opacity: 1;
@@ -495,11 +484,18 @@ p{
   background-color: #1c5687;
   grid-area: announcement_container;
 }
+.announcement-site-row h3{
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #1c5687;
+  font-size: 26px;
+  margin: 0;
+}
 .announcement-site-row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: top;
-  width: 100%;
+  width: 1680px;
   height: 407px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -508,6 +504,14 @@ p{
   background-color: #ffffff;
   width: 720px;
   padding: 24px 30px 39px 30px;
+  margin: 0 60px 0 90px;
+  height: 407px;
+}
+.announcement-site-column p{
+  font-family: 'Sintony', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
 }
 .text-container{
   padding-top: 20px;
@@ -518,20 +522,27 @@ p{
   width: 720px;
   min-height: 407px;
 }
-/* Handles my site shortcut list*/
-.site-shortcut-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.site-column{
+  background-color:#ffff;
+  width: 720px;
+  margin: 0 20px;
+  padding: 24px 30px 39px 30px;
+  height: 407px;
 }
-.site-shortcut-text {
+/* Handles my site shortcut list*/
+.site-column h3{
   font-family: 'Merriweather', serif;
   font-weight: bold;
   font-size: 26px;
-  color: #1c5687;
+  color:#1c5687;
   padding-bottom: 20px;
 }
-p.site-shortcut-text {
+.site-column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-column li{
   color: #1c5687;
   font-family: 'Sintony', sans-serif;
   font-weight: bold;
