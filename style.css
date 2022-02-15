@@ -466,14 +466,6 @@ p {
   margin-top: 43px;
   margin-bottom: 32px;
 }
-.news-column h2 {
-  font-family: "Sintony", sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: none;
-  color: #1c5687;
-  margin: 12px auto 12px auto;
-}
 /* More Button in News Column*/
 .more-btn {
   background-color: #113a55;
@@ -501,16 +493,39 @@ p {
   justify-content: space-evenly;
   gap: 50px;
 }
-.news-image {
-  width: 330px;
-  height: 240px;
-}
 /* Handles the news columns */
 .news-column {
   max-width: 330px;
   max-height: 389px;
   padding-bottom: 60px;
   flex: auto;
+}
+.news-column h2 {
+  font-family: "Sintony", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: none;
+  color: #1c5687;
+  margin: 12px auto 12px auto;
+}
+.news-column:hover h2{
+  text-decoration: underline;
+  color: #113a55;
+}
+/* Wraps my image so i can hide overflow when zoomed in on hover */
+.news-image-wrapper{
+  display: inline-block;
+  overflow: hidden;
+}
+.news-column img{
+  width: 330px;
+  height: 240px;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+}
+.news-column:hover img{
+  transform: scale(1.1);
+  transition-timing-function: ease-out;
 }
 /* For announcement content */
 .announcement_container {
@@ -697,6 +712,13 @@ p {
 }
 .socials img {
   padding-right: 50px;
+  transition-timing-function: 0.3s;
+  transition-timing-function: ease-out;
+}
+.socials img:hover{
+  transform: translateY(-5px);
+  transition-timing-function: 0.3s;
+  transition-timing-function: ease-out;
 }
 .socials-container {
   display: flex;
