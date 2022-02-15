@@ -185,10 +185,17 @@ p {
   margin-right: 7.08px;
   transform: rotate(180deg);
   z-index: 2;
+  transition-timing-function: ease-out;
+  transition: 0.3s;
 }
 /* Makes dropdown for school visible under 'schools'*/
 .dropdown:hover .dropdown-content-school {
   display: block;
+}
+.dropdown:hover .school-arrow-icon{
+  transform: rotate(270deg);
+  transition-timing-function: ease-out;
+  transition: 0.3s;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content-school {
@@ -228,6 +235,7 @@ p {
   background-color: #ffffff;
   color: #113a55;
   text-decoration: underline;
+  
 }
 .dropdown:hover .dropbtn {
   background-color: #113a55;
@@ -281,7 +289,6 @@ p {
   font-weight: normal;
   font-size: 1.25em;
   padding-top: 6px;
-  padding-bottom: 20px;
 }
 .global_icons {
   display: flex;
@@ -295,6 +302,18 @@ p {
 }
 .global_icons_wrapper {
   padding-left: 47px;
+}
+.global_icons_wrapper img{
+  width: 40px;
+  height: auto;
+  padding-bottom: 8.26px;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+}
+.global_icons_wrapper img:hover{
+  transform: translateY(-5px);
+  transition-timing-function: ease-out;
+  transition: 0.3s;
 }
 /* Styles my slider content */
 .slider-section {
@@ -419,11 +438,10 @@ p {
   font-weight: bold;
   border-radius: 5px;
 }
-.learn-more-btn button:hover{
+.learn-more-btn:hover{
   background-color: #f7f7f7;
   color: #1c5687;
   border: 1px solid #7d9299;
-  border-radius: 5px;
 }
 /* Style for the mid news section, columns */
 .news_content {
@@ -471,7 +489,7 @@ p {
   font-weight: bold;
   border-radius: 5px;
 }
-.more-btn button:hover{
+.more-btn:hover{
   background-color: #f7f7f7;
   color: #1c5687;
   border: 1px solid #7d9299;
