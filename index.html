@@ -43,13 +43,13 @@
                     </div>
                 </div>
                 <div class="search"> 
-                    <button onclick="myFunction()" class="search-button"><img src="/Assets/Assets/SVG/Search Icons/Magnifying Glass.svg" alt="Search Icon"></button>
+                    <button onclick="searchFunction()" class="search-button"><img id="search-icon-1" src="/Assets/Assets/SVG/Search Icons/Magnifying Glass.svg" alt="Search Icon"></button>
                     <div id="search-bar" class="search-bar-content">
                         <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
                         <img src="/Assets/Assets/SVG/Search Icons/Arrow.svg" alt="search-arrow">
                     </div>
                     <script>
-                        function myFunction(){
+                        function searchFunction(){
                             document.getElementById("search-bar").classList.toggle("show");
                         }
                     </script>
