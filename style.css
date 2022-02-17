@@ -153,12 +153,10 @@ nav {
   color: #113a55;
   text-decoration: underline;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #113a55;
@@ -242,11 +240,54 @@ nav {
   color: #ffffff;
 }
 /* Sizes my container for the search icon */
-.search {
+.search-button {
   display: inline-flex;
+  position: relative;
   background-color: #113a55;
-  padding-left: 22.24px;
-  padding-right: 22.24px;
+  border: none;
+  width: 60px;
+  height: 100%;
+  justify-content: center;
+}
+/* Gives my search icon dimensions */
+.search img {
+  width:15.53px;
+  height:60px
+}
+/* Search bar dropdown */
+.search-bar-content {
+  display: none;
+  position: absolute;
+  min-width: 465px;
+  max-height: 90px;
+  background-color: #ffff;
+  box-shadow: 0px 0px 10px #00000075;
+  padding: 20px 22.65px 20px 30px;
+  overflow: auto;
+  right: 0;
+  z-index: 2;
+}
+.search-bar-content img {
+  min-width: 24.8px;
+  min-height: 20px;
+  margin-left: 22.45px;
+}
+#myInput {
+  box-sizing: border-box;
+  font-family: "Sintony", sans-serif;
+  font-size: 16px;
+  min-width: 365px;
+  padding: 14px 20px 12px 16px;
+  border: 1px solid #7D9299;
+  border-radius: 4px;
+  height: 50px;
+  text-align: left;
+}
+/* Shows on click of search icon */
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* featured header section */
 .featured_header {
@@ -638,7 +679,7 @@ nav {
   font-family: "Sintony", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  padding: 0 15.25px;
+  padding: 0;
 }
 .footer a {
   color: #1c5687;
