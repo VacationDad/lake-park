@@ -674,6 +674,7 @@ nav {
   border-left: 1px solid #7d9299;
   margin: 0 30.5px;
 }
+/* Removes margin spacing for extra links in footer area */
 .additional-links hr {margin: 0;}
 /* Styles my footer text */
 .footer p {
@@ -736,10 +737,10 @@ nav {
   border: 1px solid #7d9299;
   border-radius: 5px;
 }
-.backtotop-btn {
+#backtotop-btn {
   margin-left: 10px;
 }
-.backtotop-btn img {
+#backtotop-btn img {
   transform: rotate(90deg);
   margin-right: 5.14px;
 }

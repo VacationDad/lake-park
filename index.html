@@ -190,7 +190,7 @@
                 <div class="footer-button-container">
                     <hr>
                     <button>Site Map</button>
-                    <button class="backtotop-btn"><img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" alt="arrow icon">Back to top</button>
+                    <button onclick="topFunction()" id="backtotop-btn"><img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" alt="arrow icon"> Back to top</button>
                 </div>
                 <div class="additional-links">
                     <a href="#">Accreditation</a><hr>
@@ -199,6 +199,13 @@
                     <a href="#">Contact Us</a>
                 </div>
             </div>
+            <script>
+                var backtotop = document.getElementById("backtotop-btn");
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
         </footer>
         <!-- Footer Social Section -->
         <footer class="socials">
