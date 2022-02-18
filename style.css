@@ -672,7 +672,9 @@ nav {
   display: flex;
   justify-content: center;
   border-left: 1px solid #7d9299;
+  margin: 0 30.5px;
 }
+.additional-links hr {margin: 0;}
 /* Styles my footer text */
 .footer p {
   color: #1c5687;
