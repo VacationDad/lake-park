@@ -194,6 +194,7 @@ nav {
   transform: rotate(270deg);
   transition-timing-function: ease-out;
   transition: 0.3s;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(290deg) brightness(106%) contrast(101%);
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content-school {
@@ -393,7 +394,7 @@ nav {
   justify-content: flex-end;
   position: absolute;
   bottom: 0%;
-  transform: translateY(-20%);
+  transform: translateY(-15px);
 }
 /* Carousel Button Style */
 .carousel .carousel__actions button {
@@ -411,6 +412,18 @@ nav {
 .carousel .carousel__actions button#carousel__button--next {
   margin-right: 15px;
   transform: rotate(180deg);
+}
+/* Change colors of arrows */
+.filter-arrows{
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(290deg) brightness(106%) contrast(101%);
+}
+/* Removes arrow filter on hover to go back to white */
+.carousel__actions button:hover .filter-arrows{
+  filter: none;
+}
+/* Adds blue filter on pause button on hover */
+.carousel__actions button:hover .filter-pause {
+  filter: invert(24%) sepia(55%) saturate(1016%) hue-rotate(172deg) brightness(100%) contrast(90%);
 }
 /* Hover effect for slider buttons */
 .carousel .carousel__actions button:hover{  
