@@ -82,36 +82,39 @@
         </div>
         <!-- Slider section; Base Layer -->
         <div class="slider-section">
-            <!-- Bottom Layer, put images into one wrapper -->
-            <div class="photo-wrapper">
-                <img class="photo-column1" src="/Assets/Assets/Main Images/Main Image.png" alt="main image">
-                <img class="photo-column2" src="/Assets/Assets/Main Images/Soccer image.png" alt="soccer ball">
-            </div>
-            <!-- Middle Layer, positon overlay and slider icons  -->
-            <div class="slider-row">
-                <div class="slider-column1">
-                    <!-- Buttons for Slider -->
-                    <div class="slider-icon1">
-                        <img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" style="width: 9px; height: 13px;">
+            <div class="carousel-outer-container">
+                <div class="carousel">
+                    <div class="carousel__item carousel__item--visible">
+                      <img src="/Assets/Assets/Main Images/Main Image.png" alt="main image"/>
                     </div>
-                    <div class="slider-icon2">
-                        <img src="/Assets/Assets/SVG/Photo Rotator Controls/Pause.svg" style="width: 9px; height: 13px;">
+                    <div class="carousel__item">
+                      <img src="/Assets/Assets/Main Images/Soccer image.png" alt="soccer image"/>
                     </div>
-                    <div class="slider-icon3">
-                        <img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" style="width: 9px; height: 13px;">
+                    <div class="carousel__item">
+                      <img src="/Assets/Assets/Main Images/Main Image.png" alt="main image" />
                     </div>
-                </div>
-                 <!-- Top Layer, text context for slider -->
-                <div class="slider-column2">
-                    <div class="slider-content-wrapper">
+                    <div class="carousel__item">
+                        <img src="/Assets/Assets/Main Images/Soccer image.png" alt="soccer image"/>
+                      </div>
+              
+                    <div class="carousel__actions">
+                      <button id="carousel__button--prev"><img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" alt="left-arrow"/></button>
+                      <button id="carousel__button--pause"><img src="/Assets/Assets/SVG/Photo Rotator Controls/Pause.svg" alt="left-arrow"/></button>
+                      <button id="carousel__button--next"><img src="/Assets/Assets/SVG/Photo Rotator Controls/Arrow.svg" alt="left-arrow"/></button>
+                    </div>
+                  </div>
+                  <div class="carousel-right">
+                    <div class="carousel-right-wrapper">
                         <h4>Welcome to Our Site!</h4>
                         <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.</p>
                         <button class="learn-more-btn">
                             Learn More
                         </button>
                     </div>
-                </div>
+                  </div>
             </div>
+        
+            <script src="main.js"></script>
         </div>
         <!-- Current News Section -->
         <section class="news_content">

@@ -362,109 +362,66 @@ nav {
   overflow: hidden;
   grid-area: slider-section;
 }
-.slider-row h4 {
-  font-family: "Merriweather", serif;
-  font-size: 22px;
-  padding-bottom: 20px;
-  font-weight: bold;
-  color: #ffff;
-  text-align: left;
-}
-/* wraps my two photos in the slider */
-.photo-wrapper {
-  display: flex;
+.carousel-outer-container {
+  display: flex;  
   flex-direction: row;
-  justify-content: space-evenly;
-  float: right;
-  z-index: 1;
+  max-height: 585px;
 }
-.photo-column1 {
-  height: auto;
-  display: inline-flex;
-  min-width: 1071px;
+.carousel {
+  overflow: hidden;
+  max-width: 1071px;
+  max-height: 585px;
+  position: relative;
 }
-/* clearfix, moves second photo to side, might need to change later */
-.photo-column2 {
-  object-fit: cover;
-  display: inline-flex;
-  object-position: 50% 50%;
-  background-color: purple;
-  min-width: 609px;
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
 }
-/* figure out why this isnt overlaying the photo.column2 image */
-.slider-row {
-  z-index: 2;
-  display: flex;
-  position: absolute;
+.carousel .carousel__item img {
   width: 100%;
-  height: 585px;
-  max-height: 100%;
+  max-width: 1071px;
+  height: auto;
 }
-.slider-row p {
-  color: #ffff;
-  font-family: "Sintony", sans-serif;
-  font-size: 16px;
-  padding-bottom: 18px;
-  padding-right: 90px;
-  line-height: 25px;
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
 }
-/* Handling of column split for div's layer above the slider photos*/
-.slider-column1 {
-  display: inline-flex;
+/* Button Positions */
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
   justify-content: flex-end;
-  align-self: flex-end;
-  padding-bottom: 15px;
-  width: 119%; /* why isn't this working at 100% */
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(-20%);
 }
-/* Wrapper for my slider icons */
-.slider-icon1 {
-  width: 35px;
-  height: 35px;
-  background-color: #113a55;
-  opacity: 0.9;
-  margin-right: 5px;
-  border: none;
+/* Carousel Button Style */
+.carousel .carousel__actions button {
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Change SVG color in jquery */
-}
-.slider-icon2 {
+  border: 0;
+  cursor: pointer;
   width: 35px;
   height: 35px;
-  margin-right: 5px;
-  background-color: #113a55;
+  background-color: #1C5687;
   opacity: 0.9;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Change SVG color in jquery */
 }
-.slider-icon3 {
-  width: 35px;
-  height: 35px;
+.carousel .carousel__actions button#carousel__button--pause {
+  margin: 0px 5px;
+}
+.carousel .carousel__actions button#carousel__button--next {
   margin-right: 15px;
-  background-color: #113a55;
-  opacity: 0.9;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Change SVG color in jquery */
   transform: rotate(180deg);
 }
-/* Column 2 is for the content on the right side of slider section (Welcome!) */
-.slider-column2 {
+/* Right side of slider section */
+.carousel-right {
+    max-height: 585px;
+}
+.carousel-right-wrapper {
   padding-left: 40px;
   padding-top: 158px;
-  display: flex;
   background-color: rgba(28, 86, 135, 0.9);
   max-width: 609px;
-  float: right;
+  height: 100%;
 }
 /* Learn more button in slider */
 .learn-more-btn {
@@ -483,6 +440,23 @@ nav {
   background-color: #f7f7f7;
   color: #1c5687;
   border: 1px solid #7d9299;
+}
+/* Carousel font styling */
+.carousel-right h4 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #ffff;
+  text-align: left;
+}
+.carousel-right p {
+  color: #ffff;
+  font-family: "Sintony", sans-serif;
+  font-size: 16px;
+  padding-bottom: 18px;
+  padding-right: 90px;
+  line-height: 25px;
 }
 /* Style for the mid news section, columns */
 .news_content {
