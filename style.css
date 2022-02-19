@@ -381,7 +381,7 @@ nav {
 .carousel .carousel__item img {
   width: 100%;
   max-width: 1071px;
-  height: auto;
+  height: 585px;
 }
 .carousel .carousel__item--visible {
   display: block;
