@@ -53,6 +53,7 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
   width: 100%;
   z-index: 10;
 }
@@ -61,7 +62,6 @@ nav {
   position: relative;
   color: #ffffff;
   padding: 0px 0px 0px 70px;
-  font-size: 1.125em;
   align-items: center;
   width: 100%;
   height: 60px;
@@ -75,18 +75,20 @@ nav {
   height: 100%;
 }
 .navbar a.navlink {
+  display: inline-block;
   font-family: "Sintony", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
+  height: 60px;
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
-  text-decoration-color: none;
   padding: 18px 21px 18px 20px;
-  align-items: center;
 }
 .navbar .navlink-active {
+  display: inline-block;
   font-family: "Sintony", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
+  height: 60px;
   color: #ffffff;
   background-color: #113a55;
   font-weight: 400;
@@ -111,11 +113,10 @@ nav {
 .dropbtn {
   background-color: #1c5687;
   font-family: "Sintony", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   color: #ffffff;
   font-weight: 400;
   color: white;
-  font-size: 18px;
   border: none;
   padding: 18px 21px 18px 20px;
   height: 100%;
@@ -125,12 +126,13 @@ nav {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  height: 100%;
-  min-width: 300px;
+  height: 189px;
+  width: 300px;
   text-align: left;
   opacity: 1;
   z-index: 1;
   padding-top: 20px;
+  margin: 0;
   box-shadow: 0px 0px 10px 0px #00000075;
 }
 /* Links inside the dropdown */
@@ -138,13 +140,13 @@ nav {
   color: #1c5687;
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size:  0.888em;
   letter-spacing: 0px;
   text-decoration: none;
   display: block;
   background-color: #ffffff;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 /* Change color of dropdown links on hover */
@@ -201,7 +203,7 @@ nav {
   display: none;
   position: absolute;
   right: 0;
-  height: 100%;
+  height: 159px;
   min-width: 260px;
   text-align: left;
   opacity: 1;
@@ -216,13 +218,13 @@ nav {
   color: #113a55;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 0.888em;
 }
 .dropdown-content-school a.drop {
   color: #1c5687;
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 0.888em;
   letter-spacing: 0px;
   text-decoration: none;
   display: block;
@@ -276,7 +278,7 @@ nav {
 #myInput {
   box-sizing: border-box;
   font-family: "Sintony", sans-serif;
-  font-size: 16px;
+  font-size: 0.888em;
   min-width: 365px;
   padding: 14px 20px 12px 16px;
   border: 1px solid #7D9299;
@@ -340,7 +342,7 @@ nav {
   margin-left: auto;
   margin-right: 92px;
   height: 100%;
-  font-size: 16px;
+  font-size: 0.888em;
 }
 .global_icons_wrapper {
   padding-left: 47px;
@@ -360,6 +362,9 @@ nav {
 /* Styles my slider content */
 .slider-section {
   display: flex;
+  justify-content: center;
+  flex: 1 1 0;
+  min-height: 0;
   overflow: hidden;
   grid-area: slider-section;
 }
@@ -432,7 +437,7 @@ nav {
   border: 1px solid #7d9299;}
 /* Right side of slider section */
 .carousel-right {
-    max-height: 585px;
+  max-height: 585px;
 }
 #carousel-right-wrapper {
   padding-left: 40px;
@@ -458,7 +463,7 @@ nav {
   color: #ffffff;
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 0.888em;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   border-radius: 5px;
@@ -471,7 +476,7 @@ nav {
 /* Carousel font styling */
 .carousel-right h4 {
   font-family: "Merriweather", serif;
-  font-size: 22px;
+  font-size: 1.222em;
   padding-bottom: 20px;
   font-weight: bold;
   color: #ffff;
@@ -480,7 +485,7 @@ nav {
 .carousel-right p {
   color: #ffff;
   font-family: "Sintony", sans-serif;
-  font-size: 16px;
+  font-size: 0.888em;
   padding-bottom: 18px;
   padding-right: 90px;
   line-height: 25px;
@@ -493,18 +498,23 @@ nav {
   justify-content: center;
   width: 100vw;
 }
+.news_content div {
+  overflow: hidden;
+}
 /* Contains my header content ("current news + more button */
 .news-content-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 0;
+  flex: 1 1 0;
 }
 /* Styles news contenter text*/
 .news-content-header h1 {
   color: #1c5687;
   font-family: "Merriweather", serif;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 1.888em;
   margin-top: 43px;
   margin-bottom: 32px;
 }
@@ -518,7 +528,7 @@ nav {
   height: 45px;
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 0.888em;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   border-radius: 5px;
@@ -545,7 +555,7 @@ nav {
 .news-column h2 {
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.222em;
   line-height: none;
   color: #1c5687;
   margin: 12px auto 12px auto;
@@ -574,6 +584,7 @@ nav {
   background-color: #1c5687;
   display: flex;
   justify-content: center;
+  width: 100vw;
   grid-area: announcement_container;
 }
 /* Styles h3*/
@@ -581,13 +592,14 @@ nav {
   font-family: "Merriweather", serif;
   font-weight: 700;
   color: #1c5687;
-  font-size: 26px;
+  font-size: 1.444em;
   margin: 0;
 }
 .announcement-site-row {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
+  overflow: hidden;
 }
 .announcement-site-column {
   background-color: #ffffff;
@@ -601,7 +613,7 @@ nav {
 .announcement-site-column p {
   font-family: "Sintony", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.888em;
   margin: 0;
 }
 .text-container {
@@ -625,7 +637,7 @@ nav {
 .site-column h3 {
   font-family: "Merriweather", serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 1.444em;
   color: #1c5687;
   margin: 0%;
 }
@@ -654,7 +666,7 @@ nav {
   color: #1c5687;
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 0.888em;
   text-align: left;
   padding-bottom: 0;
 }
@@ -664,6 +676,7 @@ nav {
   display: flex;
   justify-content: center;
   padding-top: 37px;
+  width: 100vw;
   grid-area: footer;
 }
 /* Line behind footer container */
@@ -682,7 +695,7 @@ nav {
   color: #1c5687;
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.111em;
   padding: 0;
 }
 .footer a {
@@ -726,7 +739,7 @@ nav {
   color: #ffffff;
   padding: 13px 20px 12px 19px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 0.888em;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: bold;
   border-radius: 5px;
@@ -754,12 +767,12 @@ nav {
 .additional-links a {
   padding: 10px;
   margin: 0;
-  font-size: 16px;
+  font-size: 0.888em;
   text-align: center;
   color: #1c5687;
   font-family: "Sintony", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 0.888em;
 }
 .additional-links a:hover {
   text-decoration: underline;
@@ -775,7 +788,7 @@ nav {
   color: #ffffff;
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.222em;
   margin-bottom: 0;
   text-align: center;
   margin-right: 47.06px;
@@ -795,6 +808,12 @@ nav {
   justify-content: center;
   align-items: baseline;
 }
+/* hidden navbar items for mobile */
+.mobile-nav {
+  display: none;
+}
+
+
 /* hopefully repsonive for mobiles */
 @media screen and (max-width: 1024px) {
   #site_wrap {
@@ -807,9 +826,55 @@ nav {
       "footer footer footer footer footer footer"
       "socials socials socials socials socials socials";
   }
-  .title-text {
-    padding: 10px 0 0 19px;
+  /* nav bar section */
+  .navbar{
+    display: none;
+    padding: 0;
   }
+  .school-dropdown{
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 60px
+  }
+  .mobile-nav div{
+    display: flex;
+  }
+  .mobile-nav img{
+    width: 35.72px;
+    height: 22.22px;
+  }
+  .mobile-nav h1{
+    font-family: 'Sintony', sans-serif;
+    font-size: 0.888em;
+    padding-left: 10.28px;
+  }
+  /* search icon for mobile */
+  .search {
+    margin-right: 0;
+    display: block;
+    float: right;
+  }
+  /* featured header section */
+  .featured_header_container {
+    padding-left: 64px;
+    justify-content: flex-start;
+  }
+  .title-text {
+    line-height: 1.89em;
+    word-spacing: 0;
+  }
+  .global_icons {
+    display: none;
+    margin-right: 0;
+  }
+
+  /* News section */
   .news_content {
     background-color: #ffffff;
     grid-area: news_content;
@@ -820,7 +885,8 @@ nav {
   .news_content div {
     max-width: 1024px;
   }
-}
+
+  }
 @media screen and (max-width: 640px) {
   #site_wrap {
     grid-template-areas:
@@ -828,18 +894,6 @@ nav {
       "featured_header featured_header featured_header featured_header featured_header featured_header"
       "slider-section slider-section slider-section slider-section slider-section slider-section"
       ". news_content news_content news_content news_content ."
-      "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
-      "footer footer footer footer footer footer"
-      "socials socials socials socials socials socials";
-  }
-}
-@media screen and (max-width: 320px) {
-  #site_wrap {
-    grid-template-areas:
-      "header header header header header header"
-      "featured_header featured_header featured_header featured_header featured_header featured_header"
-      "slider-section slider-section slider-section slider-section slider-section slider-section"
-      "news_content news_content news_content news_content news_content news_content"
       "announcement_container announcement_container announcement_container announcement_container announcement_container announcement_container"
       "footer footer footer footer footer footer"
       "socials socials socials socials socials socials";
