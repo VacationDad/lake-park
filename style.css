@@ -383,10 +383,22 @@ nav {
 .carousel .carousel__item--hidden {
   display: none;
 }
-.carousel .carousel__item img {
-  width: 100%;
-  max-width: 1071px;
+.carousel-img1 {
+  width: 1071px;
   height: 585px;
+  background-color: #333333;
+  background-image: url("/Assets/Assets/Main Images/Main Image.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+.carousel-img2 {
+  width: 1071px;
+  height: 585px;
+  background-color: #333333;
+  background-image: url("/Assets/Assets/Main Images/Soccer image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .carousel .carousel__item--visible {
   display: block;
@@ -443,6 +455,7 @@ nav {
   max-height: 585px;
 }
 #carousel-right-wrapper {
+  padding-right: 10px;
   padding-left: 40px;
   padding-top: 158px;
   max-width: 609px;
@@ -916,7 +929,14 @@ nav {
   #carousel-right-wrapper h4 {
     padding-bottom: 10px;
   }
-  .carousel .carousel__item img {
+  .carousel-img1 {
+    background-size: cover;
+    background-position: top left;
+    height: 350px;
+  } 
+  .carousel-img2 {
+    background-size: cover;
+    background-position: center;
     max-height: 350px;
   }
   /* News section */
