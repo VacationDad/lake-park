@@ -500,6 +500,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100vw;
+  padding: 0 20px;
 }
 .news_content div {
   overflow: hidden;
@@ -588,6 +589,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100vw;
+  padding: 0 20px;
   grid-area: announcement_container;
 }
 /* Styles h3*/
@@ -947,7 +949,7 @@ nav {
     height: 189px;
   }
   .announcement-site-row {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -983,7 +985,7 @@ nav {
       271px
       min-content
       1fr
-      950px
+      930px
       min-content
       79px;
     grid-template-areas:
@@ -1235,20 +1237,33 @@ nav {
   font-weight: bold;
   font-size: 1.444em;
   color: #1c5687;
-  margin: 0%;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.site-column li {
+  border-bottom: 1px solid #1c5687;
+  border: 0 0 1px 0;
+  background-color: none;
+  color: #7d9299;
+  padding: 10px 0;
 }
 /* Footer -- Mobile */
 .footer {
   background-color: #ffffff;
   display: inline-block;
   justify-content: center;
+  margin-top: 0;
   padding: 32px 10px;
   width: 100vw;
   grid-area: footer;
+  border-top: 6px solid #1C5687;
 }
 /* Line behind footer container */
 .footer hr {
   display: none;
+}
+.footer-container {
+  align-items: center;
 }
 /* Removes margin spacing for extra links in footer area */
 .additional-links hr {
@@ -1276,17 +1291,17 @@ nav {
   text-decoration: underline;
 }
 .contact-info {
-  display: inline;
-  justify-content: center;
   padding-bottom: 47px;
   text-align: center;
+  padding: 0 50px;
+  margin: 0;
 }
 .footer-button-container {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .footer-button-container hr {
@@ -1295,12 +1310,47 @@ nav {
   height: 1px;
   width: 100vw;
   z-index: 0;
+  display: block;
+}
+.footer p {
+  width: 220px;
+  padding-bottom: 22px;
 }
 .additional-links {
-  display: inline-block;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 0;
+}
+.additional-links a {
+  display: block;
+  padding: 0;
+}
+.socials {
+  background-color: #1c5687;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: socials;
+}
+.socials p {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.222em;
+  margin-bottom: 0;
+  text-align: center;
+  margin-right: 29px;
+}
+.socials img {
+  padding-right: 27px;
+  transition-timing-function: 0.3s;
+  transition-timing-function: ease-out;
+}
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 }
