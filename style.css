@@ -399,7 +399,7 @@ nav {
   background-color: #333333;
   background-image: url("/Assets/Assets/Main Images/Soccer image.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .carousel .carousel__item--visible {
   display: block;
