@@ -262,7 +262,7 @@ nav {
   display: none;
   position: absolute;
   min-width: 465px;
-  max-height: 90px;
+  min-height: 90px;
   background-color: #ffff;
   box-shadow: 0px 0px 10px #00000075;
   padding: 20px 22.65px 20px 30px;

@@ -57,6 +57,13 @@
                     <script>
                         function searchFunction(){
                             document.getElementById("search-bar").classList.toggle("show");
+                            var icon = document.getElementById("search-icon-1");
+                            if (icon.getAttribute('src') == "/Assets/Assets/SVG/Search Icons/Magnifying Glass.svg") {
+                                icon.src = "/Assets/Assets/SVG/Search Icons/X - Close.svg";
+                            } else {
+                                icon.src = "/Assets/Assets/SVG/Search Icons/Magnifying Glass.svg";
+                            }
+
                         }
                     </script>
                 </div>

@@ -4,6 +4,7 @@ let slidePosition = 0;
 //Autoplay 
 var slideInterval = setInterval(moveToNextSlide,3000);
 var backgroundInterval = setInterval(changeImageBackground, 3000);
+var textInterval = setInterval(changeText, 3000);
 
 // Grabs slides
 const slides = document.getElementsByClassName('carousel__item');
@@ -15,6 +16,10 @@ document.
   .addEventListener("click", function() {
     moveToNextSlide();
     changeImageBackground();
+    changeText();
+    clearInterval(slideInterval);
+    clearInterval(backgroundInterval);
+    clearInterval(textInterval);
   });
 
 // Previous button feature
@@ -23,6 +28,10 @@ document.
   .addEventListener("click", function() {
     moveToPrevSlide();
     changeImageBackground();
+    changeText();
+    clearInterval(slideInterval);
+    clearInterval(backgroundInterval);
+    clearInterval(textInterval); 
   });
 
 //Autoplay
@@ -33,12 +42,14 @@ function pauseSlideshow(){
 	playing = false;
 	clearInterval(slideInterval);
   clearInterval(backgroundInterval);
+  clearInterval(textInterval);
 }
 
 function playSlideshow(){
 	playing = true;
 	slideInterval = setInterval(moveToNextSlide,3000);
   backgroundInterval = setInterval(changeImageBackground, 3000);
+  textInterval = setInterval(changeText, 3000);
 }
 // Pause On Click
 pauseButton.onclick = function(){
@@ -75,4 +86,20 @@ function moveToPrevSlide() {
 function changeImageBackground() {
     var imageBack = document.getElementById('carousel-right-wrapper');
     imageBack.classList.toggle('lastImg');
+}
+
+//Function to change text on click
+function changeText() {
+  var textOption1 = document.getElementById("carousel-right-wrapper").getElementsByTagName("h4")[0];
+  var textOption2 = document.getElementById("carousel-right-wrapper").getElementsByTagName("p")[0];
+  if (textOption1.innerHTML === "Welcome to Our Site!") {
+    textOption1.innerHTML = "Tada! New Text!";
+  } else {
+    textOption1.innerHTML = "Welcome to Our Site!";
+  }
+  if (textOption2.innerHTML === "Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.") {
+    textOption2.innerHTML = "Viverra adipiscing at in tellus integer feugiat scelerisque. Egestas pretium aenean pharetra magna ac placerat. Quam quisque id diam vel quam elementum pulvinar. Faucibus vitae aliquet nec ullamcorper. ";
+  } else {
+    textOption2.innerHTML = "Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.";
+  }
 }
