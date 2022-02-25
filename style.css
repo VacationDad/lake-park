@@ -442,8 +442,7 @@ nav {
 }
 /* Adds blue filter on pause button on hover */
 .carousel__actions button:hover .filter-pause {
-  filter: invert(24%) sepia(55%) saturate(1016%) hue-rotate(172deg)
-    brightness(100%) contrast(90%);
+  filter: invert(70%) sepia(17%) saturate(2020%) hue-rotate(161deg) brightness(92%) contrast(97%);
 }
 /* Hover effect for slider buttons */
 .carousel .carousel__actions button:hover {
