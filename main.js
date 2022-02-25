@@ -98,7 +98,7 @@ function changeText() {
     textOption1.innerHTML = "Welcome to Our Site!";
   }
   if (textOption2.innerHTML === "Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.") {
-    textOption2.innerHTML = "Viverra adipiscing at in tellus integer feugiat scelerisque. Egestas pretium aenean pharetra magna ac placerat. Quam quisque id diam vel quam elementum pulvinar. Faucibus vitae aliquet nec ullamcorper. ";
+    textOption2.innerHTML = "Viverra adipiscing at in tellus integer feugiat scelerisque. Egestas pretium aenean pharetra magna ac placerat!";
   } else {
     textOption2.innerHTML = "Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.";
   }

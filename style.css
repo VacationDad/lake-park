@@ -325,6 +325,7 @@ nav {
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 1.875em;
+  line-height: 1em;
   margin-bottom: 0;
 }
 .title-text h2 {
@@ -375,7 +376,7 @@ nav {
 }
 .carousel {
   overflow: hidden;
-  max-width: 1071px;
+  width: 1071px;
   max-height: 585px;
   position: relative;
   grid-column: 1 / span 2;
@@ -385,16 +386,16 @@ nav {
   display: none;
 }
 .carousel-img1 {
-  width: 1071px;
+  width: 100%;
   height: 585px;
   background-color: #333333;
   background-image: url("/Assets/Assets/Main Images/Main Image.png");
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 .carousel-img2 {
-  width: 1071px;
+  width: 100%;
   height: 585px;
   background-color: #333333;
   background-image: url("/Assets/Assets/Main Images/Soccer image.png");
@@ -471,19 +472,6 @@ nav {
 .lastImg {
   background-image: url("/Assets/Assets/Main Images/Soccer image.png");
 }
-/* Learn more button in slider */
-.learn-more-btn {
-  background-color: #113a55;
-  opacity: 1;
-  border: none;
-  color: #ffffff;
-  padding: 13px 20px 12px 19px;
-  text-transform: uppercase;
-  font-size: 0.888em;
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold;
-  border-radius: 5px;
-}
 .learn-more-btn:hover {
   background-color: #f7f7f7;
   color: #1c5687;
@@ -497,14 +485,30 @@ nav {
   font-weight: bold;
   color: #ffff;
   text-align: left;
+  display: flex;
 }
 .carousel-right p {
   color: #ffff;
   font-family: "Sintony", sans-serif;
   font-size: 0.888em;
-  padding-bottom: 18px;
   padding-right: 90px;
   line-height: 25px;
+  display: inline;
+}
+/* Learn more button in slider */
+.learn-more-btn {
+  display: flex;
+  margin-top: 18px;
+  background-color: #113a55;
+  opacity: 1;
+  border: none;
+  color: #ffffff;
+  padding: 13px 20px 12px 19px;
+  text-transform: uppercase;
+  font-size: 0.888em;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
 }
 /* Style for the mid news section, columns */
 .news_content {
@@ -911,13 +915,17 @@ nav {
     max-height: 535px;
   }
   .carousel-outer-container {
-    display: inline-block;
-    flex-direction: column;
+    display: grid;
     height: auto;
   }
   .carousel {
     width: 100vw;
     height: auto;
+  }
+  .carousel-img1, .carousel-img2 {
+    width: 100%;
+    height: 350px;
+    background-size: contain;
   }
   .carousel-right {
     width: 100vw;
@@ -1010,7 +1018,7 @@ nav {
       271px
       min-content
       1fr
-      930px
+      min-content
       min-content
       79px;
     grid-template-areas:
@@ -1038,6 +1046,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    padding: 0;
   }
   .logo {
     display: flex;
@@ -1115,7 +1124,7 @@ nav {
     max-height: none;
   }
   .carousel-outer-container {
-    display: inline-block;
+    display: grid;
     height: auto;
   }
   .carousel {
@@ -1138,18 +1147,36 @@ nav {
     padding-right: 20px;
     background-image: none;
     max-height: 258px;
+    justify-content: center;
+  }
+  .carousel-img1, .carousel-img2 {
+    width: 100%;
+    height: 175px;
+    background-size: contain;
+  }
+  .carousel-img1 {
+    background-size: cover;
+    background-position: top left;
+    height: 175px;
+  } 
+  .carousel-img2 {
+    background-size: cover;
+    background-position: center;
+    max-height: 175px;
   }
   #carousel-right-wrapper h4 {
     padding-bottom: 10px;
     text-align: center;
     font-size: 22px;
+    display: block;
   }
   #carousel-right-wrapper p {
     font-size: 16px;
     padding-right: 0;
+    display: block;
   }
-  .carousel .carousel__item img {
-    height: auto;
+  .learn-more-btn {
+    display: inline-flex;
   }
   .carousel .carousel__actions {
     display: flex;
