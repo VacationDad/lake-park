@@ -43,6 +43,7 @@ function pauseSlideshow(){
 	clearInterval(slideInterval);
   clearInterval(backgroundInterval);
   clearInterval(textInterval);
+  pauseClicked();
 }
 
 function playSlideshow(){
@@ -50,6 +51,7 @@ function playSlideshow(){
 	slideInterval = setInterval(moveToNextSlide,3000);
   backgroundInterval = setInterval(changeImageBackground, 3000);
   textInterval = setInterval(changeText, 3000);
+  pauseClicked();
 }
 // Pause On Click
 pauseButton.onclick = function(){
@@ -102,4 +104,10 @@ function changeText() {
   } else {
     textOption2.innerHTML = "Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient condimentum facilisis diam lacinia.";
   }
+}
+
+// Changes pause button background on clicks
+function pauseClicked() {
+  var pauseColor = document.getElementById('carousel__button--pause')
+  pauseColor.classList.toggle('pressedState');
 }
