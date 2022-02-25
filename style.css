@@ -32,9 +32,9 @@ hr {
   grid-template-rows:
     60px
     135px
-    min-content
-    566px
-    527px
+    minmax(587px, min-content)
+    minmax(min-content,max-content)
+    minmax(572px, min-content)
     min-content
     79px;
   grid-template-areas:
@@ -378,6 +378,7 @@ nav {
   max-width: 1071px;
   max-height: 585px;
   position: relative;
+  grid-column: 1 / span 2;
 }
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
@@ -510,13 +511,13 @@ nav {
 .news_content {
   background-color: #ffffff;
   grid-area: news_content;
-  display: flex;
   justify-content: center;
   width: 100vw;
-  padding: 0 20px;
 }
-.news_content div {
+.news-content-container {
   overflow: hidden;
+  width: 100%;
+  padding: 0 90px 60px 90px;
 }
 /* Contains my header content ("current news + more button */
 .news-content-header {
@@ -559,15 +560,18 @@ nav {
 /* Creates the four columns for the news row */
 .news-row {
   display: flex;
-  justify-content: space-evenly;
-  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+  align-content: start;
+  gap: 0;
 }
 /* Handles the news columns */
 .news-column {
   max-width: 330px;
   max-height: 389px;
   padding-bottom: 60px;
-  flex: auto;
 }
 .news-column h2 {
   font-family: "Sintony", sans-serif;
@@ -945,11 +949,12 @@ nav {
     grid-area: news_content;
     display: flex;
     justify-content: center;
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
     width: 100vw;
   }
-  .news_content div {
+  .news-content-container {
     width: 100%;
+    padding: 0;
   }
   .news-row {
     display: flex;
@@ -968,6 +973,7 @@ nav {
     width: 259px;
     height: 189px;
   }
+  .announcement_container { padding: 0;}
   .announcement-site-row {
     display: inline-block;
     flex-wrap: wrap;
@@ -1032,7 +1038,6 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0;
     width: 100%;
   }
   .logo {
@@ -1164,7 +1169,7 @@ nav {
     padding: 0 20px 0 20px;
     width: 100vw;
   }
-  .news_content div {
+  .news-content-container {
     width: 100%;
   }
   .news-content-header {
@@ -1201,7 +1206,7 @@ nav {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0;
   width: 100vw;
   grid-area: announcement_container;
 }
@@ -1214,7 +1219,7 @@ nav {
   margin: 0;
 }
 .announcement-site-row {
-  display: flex;
+  display: inline-block;
   justify-content: space-evenly;
   margin: auto;
   overflow: visible;
